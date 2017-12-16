@@ -1,0 +1,16 @@
+[
+{
+  "modid": "gtaspects",
+  "name": "GT Aspects",
+  "description": "A mod that adds aspects from GregTech.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Si_hen"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

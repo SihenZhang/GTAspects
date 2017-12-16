@@ -31,6 +31,15 @@ public class Aspects {
     public static void addAspects() {
         AspectList list;
 
+        list = getAspectList(Ic2Items.electroFurnace.copy());
+        list.add(ELECTRUM, 6);
+        list.add(Aspect.CRAFT, 4);
+        list.add(Aspect.METAL, 10);
+        list.add(Aspect.MECHANISM, 4);
+        list.add(Aspect.FIRE, 8);
+        list.add(Aspect.ENERGY, 4);
+        ThaumcraftApi.registerObjectTag(Ic2Items.electroFurnace.copy(), list);
+
         list = getAspectList(Ic2Items.macerator.copy());
         list.add(ELECTRUM, 6);
         list.add(Aspect.CRAFT, 6);
@@ -40,5 +49,32 @@ public class Aspects {
         list.add(Aspect.CRYSTAL, 4);
         list.remove(Aspect.ENERGY);
         ThaumcraftApi.registerObjectTag(Ic2Items.macerator.copy(), list);
+
+        list = getAspectList(Ic2Items.extractor.copy());
+        list.add(ELECTRUM, 6);
+        list.add(Aspect.CRAFT, 6);
+        list.add(Aspect.METAL, 10);
+        list.add(Aspect.MECHANISM, 4);
+        list.add(Aspect.AIR, 4);
+        list.add(Aspect.TOOL, 4);
+        list.remove(Aspect.ENERGY);
+        ThaumcraftApi.registerObjectTag(Ic2Items.extractor.copy(), list);
+
+        list = getAspectList(Ic2Items.compressor.copy());
+        list.add(ELECTRUM, 6);
+        list.add(Aspect.CRAFT, 6);
+        list.add(Aspect.METAL, 10);
+        list.add(Aspect.MECHANISM, 4);
+        list.add(Aspect.MOTION, 6);
+        list.add(Aspect.VOID, 7);
+        list.remove(Aspect.ENERGY);
+        ThaumcraftApi.registerObjectTag(Ic2Items.compressor.copy(), list);
+
+        ThaumcraftApi.registerObjectTag(Ic2Items.canner.copy(), (new AspectList()).add(Aspect.CRAFT, 6).add(Aspect.METAL, 12).add(Aspect.MECHANISM, 8).add(Aspect.WATER, 6).add(Aspect.VOID, 6).add(ELECTRUM, 6));
+
+        ThaumcraftApi.registerObjectTag(Ic2Items.pump.copy(), (new AspectList()).add(Aspect.CRAFT, 6).add(Aspect.METAL, 12).add(Aspect.MECHANISM, 6).add(Aspect.WATER, 8).add(Aspect.TRAVEL, 6).add(ELECTRUM, 6));
+
+        ThaumcraftApi.registerObjectTag(Ic2Items.magnetizer.copy(), (new AspectList()).add(Aspect.CRAFT, 6).add(Aspect.METAL, 12).add(Aspect.MECHANISM, 6).add(MAGNETO, 8).add(Aspect.MOTION, 6).add(ELECTRUM, 6));
+
     }
 }

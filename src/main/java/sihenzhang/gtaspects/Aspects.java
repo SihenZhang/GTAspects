@@ -70,13 +70,15 @@ public class Aspects {
         list.remove(Aspect.ENERGY);
         ThaumcraftApi.registerObjectTag(Ic2Items.compressor.copy(), list);
 
-        ThaumcraftApi.registerObjectTag(Ic2Items.canner.copy(), (new AspectList()).add(Aspect.CRAFT, 6).add(Aspect.METAL, 12).add(Aspect.MECHANISM, 8).add(Aspect.WATER, 6).add(Aspect.VOID, 6).add(ELECTRUM, 6));
+        ThaumcraftApi.registerObjectTag(Ic2Items.canner.copy(), (new AspectList()).add(Aspect.METAL, 12).add(Aspect.MECHANISM, 8).add(Aspect.CRAFT, 6).add(Aspect.WATER, 6).add(Aspect.VOID, 6).add(ELECTRUM, 6));
 
-        ThaumcraftApi.registerObjectTag(Ic2Items.pump.copy(), (new AspectList()).add(Aspect.CRAFT, 6).add(Aspect.METAL, 12).add(Aspect.MECHANISM, 6).add(Aspect.WATER, 8).add(Aspect.TRAVEL, 6).add(ELECTRUM, 6));
+        ThaumcraftApi.registerObjectTag(Ic2Items.pump.copy(), (new AspectList()).add(Aspect.METAL, 12).add(Aspect.WATER, 8).add(Aspect.CRAFT, 6).add(Aspect.MECHANISM, 6).add(Aspect.TRAVEL, 6).add(ELECTRUM, 6));
 
-        ThaumcraftApi.registerObjectTag(Ic2Items.magnetizer.copy(), (new AspectList()).add(Aspect.CRAFT, 6).add(Aspect.METAL, 12).add(Aspect.MECHANISM, 6).add(MAGNETO, 8).add(Aspect.MOTION, 6).add(ELECTRUM, 6));
+        ThaumcraftApi.registerObjectTag(Ic2Items.magnetizer.copy(), (new AspectList()).add(Aspect.METAL, 12).add(MAGNETO, 8).add(Aspect.CRAFT, 6).add(Aspect.MECHANISM, 6).add(Aspect.MOTION, 6).add(ELECTRUM, 6));
 
-        ThaumcraftApi.registerObjectTag(Ic2Items.recycler.copy(), (new AspectList()).add(Aspect.CRAFT, 6).add(Aspect.METAL, 12).add(Aspect.MECHANISM, 6).add(Aspect.LIGHT, 8).add(Aspect.EARTH, 6).add(ELECTRUM, 6));
+        ThaumcraftApi.registerObjectTag(Ic2Items.electrolyzer.copy(), (new AspectList()).add(Aspect.METAL, 14).add(ELECTRUM, 14).add(Aspect.WATER, 10).add(Aspect.CRAFT, 8).add(Aspect.EXCHANGE, 6).add(Aspect.MECHANISM, 6));
+
+        ThaumcraftApi.registerObjectTag(Ic2Items.recycler.copy(), (new AspectList()).add(Aspect.METAL, 12).add(Aspect.LIGHT, 8).add(Aspect.CRAFT, 6).add(Aspect.MECHANISM, 6).add(Aspect.EARTH, 6).add(ELECTRUM, 6));
 
         ThaumcraftApi.registerObjectTag(Ic2Items.advancedMachine.copy(), (new AspectList()).add(Aspect.METAL, 22).add(Aspect.MECHANISM, 10).add(NEBRISUM, 5).add(STRONTIO, 5));
 
